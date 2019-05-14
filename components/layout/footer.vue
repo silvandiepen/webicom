@@ -15,8 +15,8 @@ export default {};
 
 // Footer styles
 .footer {
-	padding: grid(1);
-	text-align: center;
 	color: white;
+	text-align: center;
+	padding: grid(1);
 }
 </style>

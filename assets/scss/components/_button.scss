@@ -1,9 +1,9 @@
-.button{
+.button{ 
+	display: inline-block;
+	height: 3rem;
 	border-radius: 1.5rem;
-	height: 3rem; line-height: 3rem; padding: 0 2rem;
 	background-color: color(White); 
 	color: color(Black);
-	font-weight: 500; 
-	text-decoration: none; 
-	display: inline-block; 
+	font-weight: 500; line-height: 3rem; 
+	text-decoration: none; padding: 0 2rem; 
 }

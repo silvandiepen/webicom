@@ -45,13 +45,13 @@ export default {
 	top: 0;
 	left: 0;
 	z-index: 100;
-	width: 100%;
-	text-align: center;
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
+	text-align: center;
 	&__logo {
-		padding: grid(0.5);
 		display: block;
+		padding: grid(0.5);
 		img {
 			height: 3rem;
 		}
@@ -71,9 +71,6 @@ export default {
 		display: block;
 		padding: grid(0.5) grid(0.25);
 		text-decoration: none;
-		@media #{$medium-down} {
-			padding: 1rem;
-		}
 		&:hover {
 			.navigation__text {
 				@include linerIn();
@@ -81,24 +78,27 @@ export default {
 		}
 		&.nuxt-link-exact-active {
 			.navigation__text {
-				@include linerIn();
 				--line-color: #{color(Red)};
+				@include linerIn();
 			}
+		}
+		@media #{$medium-down} {
+			padding: 1rem;
 		}
 	}
 	&__text {
+		--line-color: #{color(Yellow)};
 		position: relative;
+		color: color(White);
 		font-size: rem(20);
 		transition: clip-path 0.5s;
-		color: color(White);
-		--line-color: #{color(Yellow)};
-		@include linerOut;
 		.page--index & {
 			color: color(Black);
 		}
 		&::before {
 			height: 2px;
 		}
+		@include linerOut;
 	}
 }
 </style>

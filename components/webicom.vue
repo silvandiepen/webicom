@@ -56,7 +56,7 @@ export default {
 @import '~tools';
 svg {
 	width: grid(6);
-	@media #{$small-only}{
+	@media #{$small-only} {
 		width: grid(12);
 	}
 }
@@ -90,7 +90,6 @@ g {
 			&:nth-child(#{$i}) {
 				transform: scale(1);
 				transition-delay: #{($i * 0.1)}s;
-				@debug #{($i * 0.1)};
 			}
 		}
 	}

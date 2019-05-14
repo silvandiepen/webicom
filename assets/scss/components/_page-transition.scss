@@ -1,8 +1,8 @@
 main {
 	transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
 	.content {
-		transition: transform 0.5s;
 		transform: translateY(grid(0));
+		transition: transform 0.5s;
 	}
 }
 

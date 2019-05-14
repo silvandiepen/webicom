@@ -4,35 +4,35 @@ h3,
 h4,
 h5,
 h6 {
-  color: inherit;
-  &.sub {
-    font-weight: 400;
-  }
+	color: inherit;
+	&.sub {
+		font-weight: 400;
+	}
 }
 
 
 h3{
-  font-size: grid(.75);
-  @include min-('font-size',.75,40);
-  line-height: 1.25;
+	font-size: grid(.75);
+	@include min-('font-size',.75,40);
+	line-height: 1.25;
 }
 h4{
-  font-size: grid(.5);
-  @include min-('font-size',.5,24);
-  font-weight: normal;
-  line-height: 1.25;
+	font-weight: normal;
+	font-size: grid(.5);
+	line-height: 1.25;
+	@include min-('font-size',.5,24);
 }
 
 p{
-  font-size: 18px;
-  opacity: .9;
-  line-height: 1.5;
+	font-size: 18px;
+	line-height: 1.5;
+	opacity: .9;
 }
 
-hr{
-  border: none; color: currentColor; 
-  height: 2px; 
-  margin: 2rem; 
-  background-image: linear-gradient(to bottom, color(White,.25), color(White,.25));
-  background-color: transparent;
+hr{ 
+	height: 2px;
+	border: none;
+	background-color: transparent; 
+	background-image: linear-gradient(to bottom, color(White,.25), color(White,.25)); color: currentColor; 
+	margin: 2rem;
 }

@@ -21,13 +21,13 @@ export default {};
 <style lang="scss">
 @import '~tools';
 .work {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	min-height: 100vh;
 	background-color: color(Army);
 	color: color(White);
 	padding: grid(4 0);
-	min-height: 100vh;
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 </style>
