@@ -67,22 +67,37 @@ export default {
 		display: flex;
 	}
 	&__link {
+		position: relative;
 		display: block;
 		padding: grid(0.5) grid(0.25);
 		text-decoration: none;
 		@media #{$medium-down} {
 			padding: 1rem;
 		}
-		@include linerOut();
 		&:hover {
-			@include linerIn();
+			.navigation__text {
+				@include linerIn();
+			}
+		}
+		&.nuxt-link-exact-active {
+			.navigation__text {
+				@include linerIn();
+				--line-color: #{color(Red)};
+			}
 		}
 	}
 	&__text {
+		position: relative;
 		font-size: rem(20);
+		transition: clip-path 0.5s;
 		color: color(White);
+		--line-color: #{color(Yellow)};
+		@include linerOut;
 		.page--index & {
 			color: color(Black);
+		}
+		&::before {
+			height: 2px;
 		}
 	}
 }

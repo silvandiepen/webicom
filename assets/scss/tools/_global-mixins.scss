@@ -1,4 +1,22 @@
-@mixin linerOut {
+
+@keyframes underlineIn {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -100% 0;
+	}
+}
+@keyframes underlineOut {
+	0% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 0% 0;
+	}
+}
+
+@mixin linerOut() {
 	&::before {
 		content: '';
 		position: absolute;
@@ -9,7 +27,7 @@
 		background-image: linear-gradient(
 			to right,
 			transparent 50%,
-			currentColor 50%
+			var(--line-color, black) 50%
 		);
 		background-size: 200% 200%;
 		animation: underlineOut 0.5s forwards;
