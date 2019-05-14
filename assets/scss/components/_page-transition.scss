@@ -1,0 +1,22 @@
+main {
+	transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+	.content {
+		transition: transform 0.5s;
+		transform: translateY(grid(0));
+	}
+}
+
+.page-enter-active,
+.page-leave-active {
+	transition: opacity 0.5s;
+	.content {
+		transform: translateY(-grid(1));
+	}
+}
+.page-enter,
+.page-leave-active {
+	opacity: 0;
+	.content {
+		transform: translateY(grid(1));
+	}
+}

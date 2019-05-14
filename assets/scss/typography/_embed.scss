@@ -1,0 +1,32 @@
+$font-primary: (
+	font-family: (
+		Inter,
+		serif
+	),
+	load: true,
+	weights: (
+		'Regular': 400,
+		'SemiBold': 500
+	),
+	path: '/fonts',
+	files: (
+		'woff',
+		'woff2',
+		'ttf',
+		'otf'
+	),
+	use: (
+		'h1',
+		'h2',
+		'h3',
+		'h4',
+		'h5',
+		'h6',
+		'p',
+		'body'
+	),
+	types: (
+		'normal',
+		'italic'
+	)
+);
